@@ -1,0 +1,275 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: QuarionBook, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style-type: none;
+}
+
+section {
+  padding-top: 100px;
+}
+
+button {
+  border: none;
+}
+
+button:focus,
+button:active,
+.owl-prev:active,
+.owl-next:active,
+button:hover,
+i:hover,
+span:hover {
+  outline: none;
+}
+
+.container {
+  max-width: 1660px;
+}
+
+/************************* Owl Carousel *********************/
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: transparent;
+}
+
+.carousel-icon {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+}
+
+.carousel-icon i {
+}
+
+.owl-next {
+  position: absolute;
+  right: 8%;
+  top: 10px;
+  background-color: transparent;
+}
+
+.owl-prev {
+  position: absolute;
+  right: 16%;
+  top: 10px;
+  background-color: transparent;
+}
+
+body {
+  color: white;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/******************** Header *******************/
+header {
+  background-image: url("/images/header-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(29, 29, 29, 0.226);
+  width: 100%;
+  z-index: 0;
+  height: 100%;
+}
+
+/************* Navbar ****************/
+.header-logo__col {
+  z-index: 1;
+  max-width: 330px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.nav-logo {
+  display: flex;
+  font-size: 18px;
+  font-family: MuseoSansCyrl700, sans-serif;
+}
+
+.nav__brand {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.nav__name {
+  padding: 22px 0 0 15px;
+  line-height: 1.4;
+}
+
+/*********** Carousel item  **************/
+.header-carousel__col {
+  z-index: 1;
+}
+
+.item {
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 10px 15px;
+  min-width: 350px;
+}
+
+.item-title {
+  font-size: 17px;
+  font-family: MuseoSansCyrl900, sans-serif;
+}
+
+.item-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.item-content__text {
+  font-size: 15px;
+  font-family: MuseoSansCyrl700, sans-serif;
+}
+
+.text-name {
+  color: #f2df8d;
+  line-height: 1.2;
+}
+
+.text-job {
+  font-family: MuseoSansCyrl500, sans-serif;
+  font-size: 15px;
+  padding-top: 8px;
+}
+
+.item__img {
+  width: 60px;
+  height: 60px;
+  object-position: center;
+  object-fit: cover;
+}
+
+.item-date {
+  font-size: 15px;
+  padding-top: 25px;
+}
+
+/********** Header-settings **************/
+.header-settings__col {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  min-width: 260px;
+}
+
+.nav-settings img {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  padding-left: 2px;
+}
+
+.nav-languages {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang {
+  padding-left: 5px;
+}
+
+.line {
+  height: 3px;
+  border-radius: 8px;
+  width: 35px;
+  background-color: white;
+  margin-top: 5px;
+}
+
+.line1 {
+  width: 25px;
+  margin-left: 10px;
+}
+
+/************** Header-main ************/
+main {
+  padding-top: 100px;
+}
+.info-title {
+  font-size: 52px;
+  font-family: MuseoSansCyrl700, sans-serif;
+}
+
+.info-text {
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.info-card {
+  padding-top: 200px;
+}
+
+.mycard {
+  border: 1px solid #f2df8d;
+  font-weight: 700;
+  padding: 10px 0 40px 10px;
+  color: #f2df8d;
+  font-size: 15px;
+  align-items: center;
+}
+
+.main-item__icon {
+  height: 50px;
+}
+.main-item {
+  text-align: center;
+  align-items: center;
+}
+.main-item__text {
+  padding-top: 10px;
+}
