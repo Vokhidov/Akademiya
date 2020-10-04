@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: MuseoSansCyrl500, sans-serif;
 }
 
 img {
@@ -55,6 +56,27 @@ span:hover {
 
 .container {
   max-width: 1660px;
+}
+
+/********** Fonts *************/
+@font-face {
+  font-family: MuseoSansCyrl300;
+  src: url("../fontMuseo/MuseoSansCyrl_0.otf");
+}
+
+@font-face {
+  font-family: MuseoSansCyrl500;
+  src: url("../fontMuseo/MuseoSansCyrl_1.otf");
+}
+
+@font-face {
+  font-family: MuseoSansCyrl700;
+  src: url("../fontMuseo/MuseoSansCyrl_2.otf");
+}
+
+@font-face {
+  font-family: MuseoSansCyrl900;
+  src: url("../fontMuseo/MuseoSansCyrl_3.otf");
 }
 
 /************************* Owl Carousel *********************/
@@ -112,7 +134,7 @@ header::before {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(29, 29, 29, 0.226);
+  background-color: rgba(53, 53, 53, 0.192);
   width: 100%;
   z-index: 0;
   height: 100%;
@@ -331,4 +353,40 @@ main {
 
 .main-item__text {
   padding-top: 10px;
+}
+
+/************** Section Social *************/
+#social {
+  background-image: url("/images/social-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#social::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(29, 29, 29, 0.438);
+  width: 100%;
+  z-index: 0;
+  height: 100%;
+}
+.sports__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sports__col {
+  max-width: ;
+}
+.sports-card {
+  background-image: url("/images/kursants.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
 }
