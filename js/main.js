@@ -1,13 +1,11 @@
 $(document).ready(function () {
-  $(".header-carousel").owlCarousel({
-    items: 1,
-    dots: false,
+  $(".header-carousel").slick({
+    cssEase: "linear",
     autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    navText: [
-      "<button class='carousel-icon'><i class='icon-left'></i></button>",
-      "<button class='carousel-icon'><i class='icon-right'></i></button>",
-    ],
+    autoplaySpeed: 2000,
+    prevArrow:
+      "<button type='button' class='slick-button button-left'><i class='icon-left' aria-hidden='true'></i></button>",
+    nextArrow:
+      "<button type='button' class='slick-button button-right'><i class='icon-right' aria-hidden='true'></i></button>",
   });
 });

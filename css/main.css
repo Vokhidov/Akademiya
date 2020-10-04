@@ -118,16 +118,51 @@ header::before {
   height: 100%;
 }
 
+/*************** Slick Slider *************/
+.slick-slide {
+  outline: none;
+}
+
+.slick-button {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 55px;
+  height: 28px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+.button-left {
+  position: absolute;
+  top: 10px;
+  right: 17%;
+  width: 30px;
+}
+
+.button-right {
+  position: absolute;
+  top: 10px;
+  right: 9%;
+  width: 30px;
+}
+
 /************* Navbar ****************/
 .header-logo__col {
   z-index: 1;
-  max-width: 330px;
+  display: flex;
+  flex: 0 0 350px;
+  width: 350px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
+}
+
+nav > div {
+  flex: 1;
 }
 
 .nav-logo {
@@ -150,14 +185,32 @@ nav {
 
 /*********** Carousel item  **************/
 .header-carousel__col {
+  flex: 0 0 calc(100% - 710px);
+  max-width: calc(100% - 710px);
+  padding: 0 30px;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.header-carousel {
+  display: flex;
+  max-width: 50%;
+  flex: 0 0 50%;
+  padding: 0 20px;
   z-index: 1;
 }
 
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
 .item {
-  border: 2px solid white;
+  border: 2px solid rgb(212, 212, 212);
   border-radius: 6px;
-  padding: 10px 15px;
-  min-width: 350px;
+  padding: 10px 20px;
+  width: 100%;
+  flex: 1;
 }
 
 .item-title {
@@ -204,7 +257,10 @@ nav {
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  min-width: 260px;
+  width: 350px;
+  flex: 0 0 350px;
+  align-items: center;
+  height: 100px;
 }
 
 .nav-settings img {
@@ -240,6 +296,7 @@ nav {
 main {
   padding-top: 100px;
 }
+
 .info-title {
   font-size: 52px;
   font-family: MuseoSansCyrl700, sans-serif;
@@ -266,10 +323,12 @@ main {
 .main-item__icon {
   height: 50px;
 }
+
 .main-item {
   text-align: center;
   align-items: center;
 }
+
 .main-item__text {
   padding-top: 10px;
 }
